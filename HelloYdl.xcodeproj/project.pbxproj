@@ -14,6 +14,7 @@
 		E12087DC28989D6B0097DB09 /* HelloYdlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12087DB28989D6B0097DB09 /* HelloYdlTests.swift */; };
 		E12087E628989D6B0097DB09 /* HelloYdlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12087E528989D6B0097DB09 /* HelloYdlUITests.swift */; };
 		E12087E828989D6B0097DB09 /* HelloYdlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12087E728989D6B0097DB09 /* HelloYdlUITestsLaunchTests.swift */; };
+		E12087F62898A0140097DB09 /* YoutubeDL in Frameworks */ = {isa = PBXBuildFile; productRef = E12087F52898A0140097DB09 /* YoutubeDL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12087F62898A0140097DB09 /* YoutubeDL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = HelloYdl;
+			packageProductDependencies = (
+				E12087F52898A0140097DB09 /* YoutubeDL */,
+			);
 			productName = HelloYdl;
 			productReference = E12087C728989D6B0097DB09 /* HelloYdl.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E12087BE28989D6B0097DB09;
+			packageReferences = (
+				E12087F42898A0140097DB09 /* XCRemoteSwiftPackageReference "YoutubeDL-iOS" */,
+			);
 			productRefGroup = E12087C828989D6B0097DB09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloYdl/Preview Content\"";
+				DEVELOPMENT_TEAM = LZ577RN3WF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloYdl/Preview Content\"";
+				DEVELOPMENT_TEAM = LZ577RN3WF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E12087F42898A0140097DB09 /* XCRemoteSwiftPackageReference "YoutubeDL-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/YoutubeDL-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E12087F52898A0140097DB09 /* YoutubeDL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E12087F42898A0140097DB09 /* XCRemoteSwiftPackageReference "YoutubeDL-iOS" */;
+			productName = YoutubeDL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E12087BF28989D6B0097DB09 /* Project object */;
 }
